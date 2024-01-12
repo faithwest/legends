@@ -4,7 +4,7 @@ from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
-from models import db, Hero ,Power ,Heropower
+from models import db, Hero ,Power ,Hero_Power
 
 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ migrate = Migrate(app, db)
 #Home index
 @app.route('/')
 def home():
-    return jsonify 'Get Ready To Exlpore!!'
+    return '({Get Ready To Exlpore!!})'
 
 #heroes
 
